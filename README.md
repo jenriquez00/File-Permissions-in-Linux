@@ -35,9 +35,18 @@ To change file permissions, use the `chmod` command. This command can modify the
 
 Example:
 ```sh
-chmod 644 /home/researcher2/projects/project_k.txt
+chmod o-w /home/researcher2/projects/project_k.txt
 ```
-This command changes the permissions of `project_k.txt` to `rw-r--r--`.
+This command changes the permissions of `project_k.txt` to `rw-rw-r--`.
+
+![image](https://github.com/jenriquez00/File-Permissions-in-Linux/assets/167884340/c81ffd49-0554-4a3a-a455-ffea6f17333c)
+
+To change command permissions of the `project_m.txt` file using `chmod` so that the group doesn’t have read or write permissions.
+Example:
+```sh
+chmod g-rw project_m.txt
+```
+![image](https://github.com/jenriquez00/File-Permissions-in-Linux/assets/167884340/a66d2e58-92bd-4de5-a882-c84729430805)
 
 #### Change File Permissions on a Hidden File
 Hidden files in Linux start with a dot (`.`). The same `chmod` command can be used to modify permissions for hidden files.
