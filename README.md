@@ -19,7 +19,7 @@ Output:
 -rw-rw---- 1 user group 1024 Jun 27 14:33 .project_x.txt
 drwx--x--- 2 user group 4096 Jun 27 14:33 drafts
 ```
-
+![Screenshot 2024-06-28 092553](https://github.com/jenriquez00/File-Permissions-in-Linux/assets/167884340/115162b5-33bd-4258-a0b3-9e71f6e83edc)
 
 #### Describe the Permissions String
 The permissions string in the output from `ls -l` consists of 10 characters. The first character represents the file type (e.g., `-` for regular files, `d` for directories). The next nine characters are divided into three groups, each representing permissions for the user, group, and others, respectively.
