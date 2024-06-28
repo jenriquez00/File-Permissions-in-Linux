@@ -56,15 +56,18 @@ Example:
 chmod 640 /home/researcher2/projects/.project_x.txt
 ```
 This command changes the permissions of `.project_x.txt` to `rw-r-----`.
+![image](https://github.com/jenriquez00/File-Permissions-in-Linux/assets/167884340/6bf33e62-a016-43cc-8b49-db1a0357f4a1)
 
 #### Change Directory Permissions
 To change the permissions of a directory, use the `chmod` command with the appropriate options.
 
 Example:
 ```sh
-chmod 750 /home/researcher2/projects/drafts
+chmod g-x drafts
 ```
-This command changes the permissions of the `drafts` directory to `rwxr-x---`.
+This command changes the permissions of the `drafts` directory to `drwx------`.
+![image](https://github.com/jenriquez00/File-Permissions-in-Linux/assets/167884340/62d5f15c-b11a-4e0c-9939-efbe4cd56970)
+
 
 #### Summary
 In this activity, you learned how to check and modify file and directory permissions using Linux commands. By ensuring that the permissions are correctly set, you help maintain the security and integrity of the system. This document demonstrates your ability to manage file permissions, a crucial skill in cybersecurity.
@@ -97,26 +100,6 @@ To examine existing file and directory permissions, use the `ls -l` command. Thi
 ## Describe the Permissions String
 The permissions string in the output from `ls -l` consists of 10 characters. The first character represents the file type (e.g., `-` for regular files, `d` for directories). The next nine characters are divided into three groups, each representing permissions for the user, group, and others, respectively.
 
-## Change File Permissions
-To change file permissions, use the `chmod` command. This command can modify the permissions for the user, group, and others.
-
-```sh
-chmod 644 /home/researcher2/projects/project_k.txt
-```
-
-## Change File Permissions on a Hidden File
-Hidden files in Linux start with a dot (`.`). The same `chmod` command can be used to modify permissions for hidden files.
-
-```sh
-chmod 640 /home/researcher2/projects/.project_x.txt
-```
-
-## Change Directory Permissions
-To change the permissions of a directory, use the `chmod` command with the appropriate options.
-
-```sh
-chmod 750 /home/researcher2/projects/drafts
-```
 
 ## Summary
 In this activity, you learned how to check and modify file and directory permissions using Linux commands. By ensuring that the permissions are correctly set, you help maintain the security and integrity of the system. This document demonstrates your ability to manage file permissions, a crucial skill in cybersecurity.
