@@ -105,4 +105,3 @@ The permissions string in the output from `ls -l` consists of 10 characters. The
 In this activity, you learned how to check and modify file and directory permissions using Linux commands. By ensuring that the permissions are correctly set, you help maintain the security and integrity of the system. This document demonstrates your ability to manage file permissions, a crucial skill in cybersecurity.
 ```
 
-Don't forget to add screenshots of your commands and their outputs in the `images` folder and reference them in the README.md file. This will provide a visual demonstration of your work.
